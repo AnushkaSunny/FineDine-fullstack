@@ -1,0 +1,148 @@
+.menu-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem 6rem 5rem;
+    background: var(--color-black);
+}
+
+.menu-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.menu-subtitle {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.menu-title {
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-description {
+    color: var(--color-grey);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 4rem;
+}
+
+.category-btn {
+    background: transparent;
+    border: 1px solid var(--color-golden);
+    color: var(--color-golden);
+    padding: 12px 26px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .3s;
+    font-size: .95rem;
+    font-family: var(--font-base);
+}
+
+.category-btn:hover {
+    background: var(--color-golden);
+    color: var(--color-black);
+}
+
+.category-btn.active {
+    background: var(--color-golden);
+    color: var(--color-black);
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+    max-width:1450px;
+    margin:0 auto;
+}
+.empty-menu {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 4rem;
+}
+
+.empty-menu h2 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+}
+
+@media screen and (max-width: 1150px) {
+
+    .menu-page {
+        padding: 7rem 3rem 4rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .menu-title {
+        font-size: 2.6rem;
+    }
+
+    .menu-description {
+        font-size: .95rem;
+    }
+
+    .category-btn {
+        padding: 10px 18px;
+        font-size: .9rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu-title {
+        font-size: 2.1rem;
+    }
+
+    .menu-subtitle {
+        font-size: .85rem;
+        letter-spacing: 3px;
+    }
+
+}
+.drink-section{
+    display:flex;
+    gap:70px;
+    margin-top:5rem;
+}
+
+.drink-column{
+    flex:1;
+}
+
+@media screen and (max-width:900px){
+
+    .drink-section{
+        flex-direction:column;
+        gap:30px;
+    }
+
+}

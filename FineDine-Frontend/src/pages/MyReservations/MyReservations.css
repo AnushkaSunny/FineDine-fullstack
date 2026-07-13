@@ -1,0 +1,164 @@
+.my-reservations-page {
+    background: var(--color-black);
+    min-height: 100vh;
+    padding: 5rem 1rem;
+}
+
+.my-reservations-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.my-reservations-container h1 {
+    text-align: center;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+.empty-text {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.reservation-card {
+    background: #111111;
+    border: 1px solid rgba(220, 202, 135, 0.35);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+.reservation-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-golden);
+    box-shadow: 0 15px 35px rgba(220, 202, 135, 0.12);
+}
+
+/* FineDine */
+
+.reservation-card h2 {
+    color: var(--color-golden);
+    text-align: center;
+    font-family: var(--font-base);
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+/* Table Reservation */
+
+.reservation-card h3 {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-base);
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.reservation-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(220, 202, 135, 0.2);
+    margin-bottom: 2rem;
+}
+
+.reservation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 1.8rem;
+}
+
+.reservation-icon {
+    color: var(--color-golden);
+    font-size: 1.5rem;
+    margin-top: 6px;
+    min-width: 28px;
+}
+
+.reservation-item span {
+    color: #9f9f9f;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.reservation-item h4 {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--font-base);
+}
+
+.reservation-card p {
+    color: var(--color-golden);
+    text-align: center;
+    font-style: italic;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.cancel-btn {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #d9534f;
+    color: #d9534f;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: #d9534f;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .my-reservations-page {
+        padding: 4rem 1rem;
+    }
+
+    .my-reservations-container h1 {
+        font-size: 2.4rem;
+    }
+
+    .reservation-card {
+        padding: 1.5rem;
+    }
+
+    .reservation-card h2 {
+        font-size: 2rem;
+    }
+
+    .reservation-card h3 {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+
+    .reservation-item {
+        gap: 15px;
+    }
+
+    .reservation-icon {
+        font-size: 1.3rem;
+    }
+
+    .reservation-item h4 {
+        font-size: 1.05rem;
+    }
+}

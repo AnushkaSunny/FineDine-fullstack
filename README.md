@@ -1,6 +1,8 @@
 # FineDine - Full Stack Restaurant Management System
 
-A full-stack restaurant web application that allows users to browse the menu, create an account, reserve tables, order food, and complete a checkout process. The project was built to practice full-stack development by integrating a React frontend with a Spring Boot backend and a MySQL database.
+A full-stack restaurant web application that allows users to browse the menu, create an account, reserve tables, order food, subscribe to the restaurant newsletter, and complete a checkout process. The project was built to practice full-stack development by integrating a React frontend with a Spring Boot backend and a MySQL database.
+
+The application includes secure user authentication using Spring Security, a shopping cart, a table reservation system, and a responsive user interface designed to simulate a real restaurant website.
 
 This project helped me gain practical experience in building secure REST APIs, implementing user authentication, managing application state, and connecting a frontend with a backend.
 
@@ -42,6 +44,11 @@ This project helped me gain practical experience in building secure REST APIs, i
 - Checkout page
 - Order confirmation screen after successful checkout
 
+  ### Newsletter
+- Subscribe to the restaurant newsletter
+- Email integration using EmailJS
+- Sends subscription requests without requiring a backend service
+
 ---
 
 ## Technologies Used
@@ -55,6 +62,7 @@ This project helped me gain practical experience in building secure REST APIs, i
 - Context API
 - Local Storage
 - Vite
+- EmailJS
 
 ### Backend
 - Java
@@ -148,6 +156,12 @@ FineDine
 ### Order Confirmation
 
 ![Confirmation](Screenshots/OrderConfirmation.png)
+
+---
+
+### Newsletter
+
+![Newsletter](Screenshots/Newsletter.png)
 
 ---
 

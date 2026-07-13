@@ -170,7 +170,7 @@ FineDine
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FineDine-fullstack.git
+git clone https://github.com/AnushkaSunny/FineDine-fullstack.git
 ```
 
 ---
